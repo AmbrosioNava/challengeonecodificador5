@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Challenge Encriptador</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+                <img class="logo" src="imagenes/Logo.png">
+        </header>
+    <main>
+        <section>
+            <textarea id="id_text_area" class="text_area" cols="30" rows="10" placeholder="Ingrese el texto aqui" onkeypress="return soloLetras(event)"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+
+                <button id="id_btn_encriptar" class="btn_encriptar" onclick="funcionEncriptar()">Encriptar</button>
+
+                <button id="id_btn_desencriptar" class="btn_desencriptar" onclick="funcionDesencriptar()">Desencriptar</button>
+
+            </div>
+        </section>
+
+        <section>
+            <textarea id="id_mensaje" class="mensaje" cols="30" rows="20"></textarea>
+            <h1 id="imagen_muneco"><img src="imagenes/Muneco.png"></h1>
+            <h2 id="mensaje_muneco"><img src="imagenes/Frame5.png"></h2>
+            <div>
+                <button id="id_copiar" class="copiar" onclick="copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    </body>
+</html>
